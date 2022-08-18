@@ -1,7 +1,7 @@
 # js-timer-project
 js timer project (live time, stop watch, count down timer)
 <br>
-live link: 
+live link: https://muhammadyeasinarafath.github.io/js-timer-project/
 <br>
 section 1: live time,
 <br>
