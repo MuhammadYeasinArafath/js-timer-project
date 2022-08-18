@@ -1,0 +1,178 @@
+:root {
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple:#8B5Cf6;
+    --primary: crimson;
+ }
+
+body{
+    text-align: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    background: var(--dark);
+    color:#FFF;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+/* time & date now css.*/
+#today{
+    background-color: var(--darkest) ;
+    width: 100%;
+    max-width: 360px;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+/* stop watch css.*/
+
+
+.watch{
+    background-color: var(--darkest) ;
+    width: 100%;
+    max-width: 360px;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.controls button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    user-select: none;
+
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+button:hover{
+    opacity: 0.8;
+}
+button:active{
+    opacity: 0.6;
+}
+.time{
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+
+
+/*Countdown css.*/
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Launching_page_img/images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.logo{
+   
+    width: 120px;
+    padding: 20px;
+    cursor:pointer;
+}
+.ppp{
+    
+    text-align: left;
+}
+.content{
+ top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color:#FFF;
+}
+.content h1{
+    font-size: 54px;
+    font-weight: 550;
+
+}
+.content h1 span{
+    color:coral;
+
+}
+.content p{
+    font-size: 30px;
+}
+.content button{
+    background: transparent;
+    border: 2px solid #FFF;
+    border-radius: 7px;
+    outline: none;
+    padding: 12px;
+    color: #FFF;
+    display:flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor:pointer;
+}
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
+.content button:hover{
+  opacity: 0.6;
+}
+.content button:active{
+    opacity: 0.8;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -1px;
+}
+.rocket{
+    width: 250px;
+    position:absolute;
+    left: 1000px;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+section{
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
